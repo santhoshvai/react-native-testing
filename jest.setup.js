@@ -3,7 +3,6 @@ import '@testing-library/jest-native/extend-expect'
 import {jest} from '@jest/globals'
 import {server} from './src/test/mocks/server'
 
-jest.mock('react-native/Libraries/Animated/src/NativeAnimatedHelper')
 jest.mock('react-native-gesture-handler', () => {
   const View = require('react-native/Libraries/Components/View/View')
   return {
